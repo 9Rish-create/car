@@ -105,3 +105,22 @@
     transform: scale(1.02);
 
  }
+ @media  screen and (max-width:1199px) {
+    div.grid {
+        width: 720x;
+        margin: 0 auto;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    div.grid figure:first-child {
+        grid-row: 1 ;
+        grid-column: 1;
+    }
+ }
+ @media screen and (max-width: 799px) {
+    div.grid {
+        width: 360px;
+        margin: 0 auto;
+        grid-template-columns: 1;
+        grid-template-rows: repeat(6,auto);
+    }
+ }
